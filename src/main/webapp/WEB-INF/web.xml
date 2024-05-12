@@ -90,6 +90,124 @@
    		<url-pattern>/join</url-pattern>
    </servlet-mapping>
    
+   <servlet>
+   		<servlet-name>write</servlet-name>
+   		<jsp-file>/views/board/write.jsp</jsp-file>
+   </servlet>
+   
+   <servlet-mapping>
+   		<servlet-name>write</servlet-name>
+   		<url-pattern>/write</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+   		<servlet-name>read</servlet-name>
+   		<jsp-file>/views/board/read.jsp</jsp-file>
+   </servlet>
+   
+   <servlet-mapping>
+   		<servlet-name>read</servlet-name>
+   		<url-pattern>/read</url-pattern>
+   </servlet-mapping>
+   
+   
+   <servlet>
+   		<servlet-name>modify</servlet-name>
+   		<jsp-file>/views/board/modify.jsp</jsp-file>
+   </servlet>
+   
+   <servlet-mapping>
+   		<servlet-name>modify</servlet-name>
+   		<url-pattern>/modify</url-pattern>
+   </servlet-mapping>
+   
+   
+   <servlet>
+   		<servlet-name>board</servlet-name>
+   		<servlet-class>rentalServer.board.controller.BoardAction</servlet-class>
+   </servlet>
+   
+   <servlet-mapping>
+   		<servlet-name>board</servlet-name>
+   		<url-pattern>/board</url-pattern>
+   </servlet-mapping>
+   
+    <servlet>
+   		<servlet-name>cars</servlet-name>
+   		<servlet-class>rentalServer.cars.controller.CarAction</servlet-class>
+   </servlet>
+   
+   <servlet-mapping>
+   		<servlet-name>cars</servlet-name>
+   		<url-pattern>/cars</url-pattern>
+   </servlet-mapping>
+   
+   <!--  
+   
+    -->
+   <servlet>
+   		<servlet-name>boardDetail</servlet-name>
+   		<servlet-class>rentalServer.board.controller.BoardDetailAction</servlet-class>
+   </servlet>
+   
+   <servlet-mapping>
+   		<servlet-name>boardDetail</servlet-name>
+   		<url-pattern>/board/*</url-pattern>
+   </servlet-mapping>
+   
+   
+   <servlet>
+   		<servlet-name>boardView</servlet-name>
+   		<jsp-file>/views/board/boardView.jsp</jsp-file>
+   </servlet>
+   
+   <servlet-mapping>
+   		<servlet-name>boardView</servlet-name>
+   		<url-pattern>/boardView/*</url-pattern>
+   </servlet-mapping>
+ 
+      <servlet>
+   		<servlet-name>carDetail</servlet-name>
+   		<servlet-class>rentalServer.cars.controller.CarDetailAction</servlet-class>
+   </servlet>
+   
+   <servlet-mapping>
+   		<servlet-name>carDetail</servlet-name>
+   		<url-pattern>/cars/*</url-pattern>
+   </servlet-mapping>
+   
+   
+   <servlet>
+   		<servlet-name>carView</servlet-name>
+   		<jsp-file>/views/cars/carView.jsp</jsp-file>
+   </servlet>
+   
+   <servlet-mapping>
+   		<servlet-name>carView</servlet-name>
+   		<url-pattern>/carView/*</url-pattern>
+   </servlet-mapping>
+   
+   <servlet>
+   	<servlet-name>boardList</servlet-name>
+   	<jsp-file>/views/board/board.jsp</jsp-file>
+   </servlet>
+   <servlet-mapping>
+   	<servlet-name>boardList</servlet-name>
+   	<url-pattern>/boardlist</url-pattern>
+   </servlet-mapping>
+   
+   
+   <servlet>
+   	<servlet-name>carList</servlet-name>
+   	<jsp-file>/views/cars/cars.jsp</jsp-file>
+   </servlet>
+   <servlet-mapping>
+   	<servlet-name>carList</servlet-name>
+   	<url-pattern>/carlist</url-pattern>
+   </servlet-mapping>
+   
+   
+   
    
   <servlet>
   		<servlet-name>JoinAction</servlet-name>
@@ -135,6 +253,17 @@
    		<servlet-name>FindUserAction</servlet-name>
    		<url-pattern>/FindUserAction</url-pattern>
    </servlet-mapping>
+   
+   
+   <servlet>
+  		<servlet-name>WriteAction</servlet-name>
+  		<servlet-class>rentalServer.board.controller.WriteAction</servlet-class>
+  </servlet>
+  <servlet-mapping>
+   		<servlet-name>WriteAction</servlet-name>
+   		<url-pattern>/WriteAction</url-pattern>
+   </servlet-mapping>
+
    
    
    
